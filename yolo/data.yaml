@@ -1,0 +1,16 @@
+# Fichier de configuration pour l'entraînement spécialisé Surveillance
+path: ./datasets/surveillance # Chemin racine du dataset
+train: images/train
+val: images/val
+test: images/test
+
+# Classes ciblées pour la sécurité
+names:
+  0: person
+  1: weapon
+  2: theft_action
+  3: aggression
+  4: suspicious_object
+  5: cell_phone
+  6: handbag
+  7: backpack

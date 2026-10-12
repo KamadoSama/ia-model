@@ -1,0 +1,17 @@
+name: ia-vision
+channels:
+  - pytorch
+  - apple
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pytorch
+  - torchvision
+  - torchaudio
+  - numpy
+  - opencv
+  - libjpeg-turbo
+  - libpng
+  - pip
+  - pip:
+      - ultralytics  # This is the library for YOLOv8/v11

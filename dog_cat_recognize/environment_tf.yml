@@ -1,0 +1,15 @@
+name: ia-train-tf
+channels:
+  - apple
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - ipykernel
+  - matplotlib
+  - numpy<2.0.0
+  - pip:
+      - tensorflow-macos==2.16.2
+      - tensorflow-metal==1.1.0
+      - keras

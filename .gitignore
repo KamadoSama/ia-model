@@ -1,0 +1,134 @@
+# ==========================================
+# Gitignore - AI / ML & Fullstack Monorepo
+# Projet : ia-model (one_day_one_technology)
+# ==========================================
+
+# --- Système d'exploitation & IDE ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+*.swp
+*.swo
+*~
+
+# --- Environnements virtuels & Python ---
+.conda/
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+bin/
+include/
+lib/
+lib64/
+
+# Python Cache & Bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+parts/
+var/
+sdist/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Tests & Linters
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints/
+*-checkpoint.ipynb
+.virtual_documents/
+
+# --- Données, Datasets & Archives volumineuses ---
+# Exclure les gros volumes de données d'entraînement/validation
+**/organized_data/
+**/train/
+**/test/
+**/val/
+**/datasets/
+**/dataset/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# Données Kaggle / CSV massifs (garder les scripts et petits templates)
+# *.csv # Décommenter si des CSV massifs sont ajoutés
+
+# --- Poids des modèles d'IA (Model Weights & Checkpoints) ---
+# Les modèles pré-entraînés doivent être téléchargés via scripts ou stockés sur un storage externe (HF / S3 / Drive)
+*.pt
+*.pth
+*.h5
+*.keras
+*.onnx
+*.tflite
+*.engine
+*.weights
+*.safetensors
+*.ckpt
+*.bin
+*.pkl
+*.pickle
+
+# Ultralytics YOLO runs & checkpoints
+runs/
+**/runs/
+
+# --- Frontend & Node.js (phone_use_detection/frontend) ---
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-store/
+
+# Build outputs
+**/dist/
+**/dist-ssr/
+*.local
+
+# Captures d'écrans & alertes générées à l'exécution
+phone_use_detection/screenshots/*
+!phone_use_detection/screenshots/.gitkeep
+**/screenshots/alert_*.jpg
+
+# --- Variables d'environnement & Secrets ---
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+credentials.json
+token.json
